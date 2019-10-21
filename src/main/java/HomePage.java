@@ -48,7 +48,7 @@ public class HomePage {
         eveningCourses.click();
         return this;
     }
-    public HomePage subMenu(String sub) {
+    public HomePage subMenu() {
         WebElement subCourses = driver.findElement(By.className("sub-menu"));
         wait.until(ExpectedConditions.elementToBeClickable(subCourses));
         subCourses.click();

@@ -44,7 +44,7 @@ public class MainTest {
          public static void homeTaskOandC() {
             homePage.isShown()
                     .mainMenu()
-                    .subMenu("Курсы");
+                    .subMenu();
             List<String> list = new ArrayList<String>();
             list.add("Тестирование");
             list.add("Frontend development");
