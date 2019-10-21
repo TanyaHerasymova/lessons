@@ -69,19 +69,18 @@ public class MainTest {
             listCourses.add("Видеомонтаж");
             listCourses.add("Cisco");
             listCourses.add("Go development");
-            for(int i = 0; i < listCourses.size(); i++) {
+            /*for(int i = 0; i < listCourses.size(); i++) {
                 System.out.println(listCourses.get(i));
-            }
-
-           /* boolean isPresent = true;
+            }*/
+            boolean isPresent = true;
              List<WebElement> itemCourses = driver.findElements(By.xpath("(//div[@class='container_12 isotope 23'])[1]/div/h2"));
              for(WebElement el: itemCourses) {
                  String text = el.getText();
-                 if(!list.contains(text)) {
+                 if(!listCourses.contains(text)) {
                      isPresent = false;
                  }
              }
-             assertTrue(isPresent);*/
+             assertTrue(isPresent);
     }
         @Test
                 public static void coursesTest() {
